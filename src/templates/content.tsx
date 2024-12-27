@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import Layout from "../components/Layout";
+import Menu from "../components/Menu";
 import { graphql } from "gatsby";
 
 type BlogPostDataProps = {
@@ -42,7 +44,7 @@ export default function BlogPostTemplate({
     }
   }, [html]);
   return (
-    <main>
+    <Layout>
       <div>
         <h1>{frontmatter.title}</h1>
         <a href={frontmatter.origin}>
@@ -50,7 +52,7 @@ export default function BlogPostTemplate({
         </a>
         <div ref={contentRef} dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-    </main>
+    </Layout>
   );
 }
 

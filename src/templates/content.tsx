@@ -45,13 +45,11 @@ export default function BlogPostTemplate({
   }, [html]);
   return (
     <Layout>
-      <div>
-        <h1>{frontmatter.title}</h1>
-        <a href={frontmatter.origin}>
-          <h2>원본 바로가기</h2>
-        </a>
-        <div ref={contentRef} dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
+      <h1>{frontmatter.title}</h1>
+      <a href={frontmatter.origin}>
+        <h2>원본 바로가기</h2>
+      </a>
+      <div ref={contentRef} dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
 }

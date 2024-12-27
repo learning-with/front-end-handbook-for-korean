@@ -1,11 +1,11 @@
 ---
 slug: "/overview-of-field-of-work"
-date: "2024-12-27"
 title: "개요"
+date: "2024-12-27"
 origin: "https://frontendmasters.com/guides/front-end-handbook/2024/#1"
 ---
 
-# 개요
+# 1. 개요
 
 이 섹션은 프론트엔드 개발/엔지니어링 분야에 대한 개요를 제공합니다.
 

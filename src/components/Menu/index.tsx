@@ -50,7 +50,7 @@ const content = [
   },
   {
     title: "Areas of Focus",
-    slug: "",
+    slug: "/areas-of-focus",
     items: [
       "웹사이트 개발",
       "웹 애플리케이션 개발 / 소프트웨어 엔지니어링",
@@ -62,18 +62,18 @@ const content = [
     ],
   },
   {
-    title: "Learning / Education / Training",
-    slug: "",
+    title: "학습 / 교육 / 훈련",
+    slug: "/learning-education-training",
     items: [
       "초기 단계",
-      "온디맨드 강좌",
+      "온라인 강좌",
       "자격증 및 학습 경로",
       "대학/대학원 교육",
     ],
   },
   {
-    title: "Foundational Aspects",
-    slug: "",
+    title: "기본적인 개념",
+    slug: "/foundational-aspects",
     items: [
       "월드 와이드 웹 (WWW 또는 웹)",
       "인터넷",
@@ -89,8 +89,8 @@ const content = [
     ],
   },
   {
-    title: "Core Competencies",
-    slug: "",
+    title: "핵심 역량",
+    slug: "/core-competencies",
     items: [
       "코드 편집기",
       "HTML (하이퍼텍스트 마크업 언어)",
@@ -112,8 +112,8 @@ const content = [
     ],
   },
   {
-    title: "Other Competencies & Paradigms",
-    slug: "",
+    title: "기타 기술 및 패러다임",
+    slug: "/other-competencies-and-paradigms",
     items: [
       "A/B 테스트",
       "AI 기반 코딩 도구",

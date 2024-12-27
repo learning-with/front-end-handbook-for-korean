@@ -43,13 +43,15 @@ export default function BlogPostTemplate({
       });
     }
   }, [html]);
+
   return (
     <Layout>
-      <h1>{frontmatter.title}</h1>
-      <a href={frontmatter.origin}>
-        <h2>원본 바로가기</h2>
-      </a>
-      <div ref={contentRef} dangerouslySetInnerHTML={{ __html: html }} />
+      <div className="flex flex-col items-center gap-[20px] py-[40px]">
+        <div ref={contentRef} dangerouslySetInnerHTML={{ __html: html }} />
+        <a href={frontmatter.origin}>
+          <h2>원본 바로가기</h2>
+        </a>
+      </div>
     </Layout>
   );
 }

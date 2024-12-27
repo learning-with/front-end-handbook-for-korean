@@ -6,23 +6,27 @@ export default function Menu() {
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
+
   return (
-    <div className="flex flex-row-reverse">
+    <div className="fixed pt-[20px] left-[20px] flex flex-row-reverse gap-[20px]">
       <div onClick={toggleMenu}>|||</div>
       {isMenuOpen && (
-        <div className="bg-blue overflow-hidden max-h-screen">
+        <div className="w-[300px] bg-white overflow-hidden max-h-screen overflow-y-auto">
           <nav>
-            <ul className="list-none p-0 m-0">
+            <ul className="list-none p-0 m-0 flex flex-col gap-[20px]">
               {content.map(({ title, slug, items }, title_index) => (
                 <li key={title_index}>
-                  <a href={`/contents${slug}`} className="block">
+                  <a href={`${slug}`} className="block">
                     <div className="font-bold">
                       {title_index + 1}. {title}
                     </div>
-                    <div>
+                    <div className="flex flex-col gap-[5px]">
                       {items.map((item, item_index) => (
-                        <div key={item_index} className="text-sm">
-                          {title_index}-{item_index} — {item}
+                        <div
+                          key={item_index}
+                          className="text-sm hover:underline"
+                        >
+                          {title_index + 1}.{item_index + 1} — {item}
                         </div>
                       ))}
                     </div>
@@ -49,7 +53,7 @@ const content = [
     ],
   },
   {
-    title: "Areas of Focus",
+    title: "주요 분야",
     slug: "/areas-of-focus",
     items: [
       "웹사이트 개발",
@@ -201,7 +205,7 @@ const content = [
     ],
   },
   {
-    title: "Front-end Development Toolbox/Stack",
+    title: "프론트엔드 개발 스택",
     slug: "",
     items: [
       "현대적인 프론트엔드 개발 툴박스/스택",
@@ -210,7 +214,7 @@ const content = [
     ],
   },
   {
-    title: "Professional Career Preparations",
+    title: "전문적인 커리어 준비",
     slug: "",
     items: [
       "온라인 존재감 구축",
@@ -221,7 +225,7 @@ const content = [
     ],
   },
   {
-    title: "Communities, Podcasts, & Email Newsletters",
+    title: "커뮤니티, 팟캐스트 및 뉴스레터",
     slug: "",
     items: ["온라인 커뮤니티", "지역 커뮤니티", "팟캐스트", "이메일 뉴스레터"],
   },

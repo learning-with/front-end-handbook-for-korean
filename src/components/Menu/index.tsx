@@ -206,7 +206,7 @@ const content = [
   },
   {
     title: "프론트엔드 개발 스택",
-    slug: "",
+    slug: "/front-end-development-toolbox-stack",
     items: [
       "현대적인 프론트엔드 개발 툴박스/스택",
       "현대적인 툴박스/스택",
@@ -215,7 +215,7 @@ const content = [
   },
   {
     title: "전문적인 커리어 준비",
-    slug: "",
+    slug: "/professional-career-preparation",
     items: [
       "온라인 존재감 구축",
       "실제 개발 작업 수행",
@@ -226,7 +226,7 @@ const content = [
   },
   {
     title: "커뮤니티, 팟캐스트 및 뉴스레터",
-    slug: "",
+    slug: "/communities-podcasts-email-newsletters",
     items: ["온라인 커뮤니티", "지역 커뮤니티", "팟캐스트", "이메일 뉴스레터"],
   },
 ];

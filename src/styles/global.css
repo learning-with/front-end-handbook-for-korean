@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 기본적인 HTML 요소들에 대한 스타일 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #950d0d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 20px 0;
+}
+ul,
+ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}

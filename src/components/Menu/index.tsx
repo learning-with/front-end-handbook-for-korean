@@ -11,20 +11,20 @@ export default function Menu() {
     <div className="fixed pt-[20px] left-[20px] flex flex-row-reverse gap-[20px]">
       <div onClick={toggleMenu}>|||</div>
       {isMenuOpen && (
-        <div className="w-[300px] bg-white overflow-hidden max-h-screen overflow-y-auto">
+        <div className="w-[350px] bg-white overflow-hidden max-h-screen overflow-y-auto">
           <nav>
             <ul className="list-none p-0 m-0 flex flex-col gap-[20px]">
               {content.map(({ title, slug, items }, title_index) => (
                 <li key={title_index}>
                   <a href={`${slug}`} className="block">
-                    <div className="font-bold">
+                    <div className="text-lg font-bold">
                       {title_index + 1}. {title}
                     </div>
                     <div className="flex flex-col gap-[5px]">
                       {items.map((item, item_index) => (
                         <div
                           key={item_index}
-                          className="text-sm hover:underline"
+                          className="text-sm font-bold hover:underline"
                         >
                           {title_index + 1}.{item_index + 1} — {item}
                         </div>

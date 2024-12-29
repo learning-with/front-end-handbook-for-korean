@@ -17,9 +17,9 @@ export default function Menu() {
               {content.map(({ title, slug, items }, title_index) => (
                 <li key={title_index}>
                   <a href={`${slug}`} className="block">
-                    <div className="text-lg font-bold">
+                    <div className="text-black text-lg font-bold">
                       {title_index + 1}. {title}
-                    </div>{" "}
+                    </div>
                   </a>
                   <div className="flex flex-col gap-[5px]">
                     {items.map((item, item_index) => (
@@ -30,7 +30,7 @@ export default function Menu() {
                       >
                         <div
                           key={item_index}
-                          className="text-sm font-bold hover:underline"
+                          className="text-black text-sm font-bold hover:underline"
                         >
                           {title_index + 1}.{item_index + 1} — {item}
                         </div>

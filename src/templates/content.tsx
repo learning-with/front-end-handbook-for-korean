@@ -37,13 +37,20 @@ export default function BlogPostTemplate({
           } else if (heading.tagName === "H2") {
             heading.style.fontSize = "1.5rem";
             heading.style.fontWeight = "600";
+            heading.style.marginTop = "30px";
             heading.id = (heading.textContent || heading.innerText).split(
               " "
             )[0];
           } else if (heading.tagName === "H3") {
             heading.style.fontSize = "1.25rem";
-            heading.style.fontWeight = "500";
+            heading.style.fontWeight = "600";
           }
+        }
+      });
+      const listItems = contentRef.current.querySelectorAll("li");
+      listItems.forEach((li) => {
+        if (li instanceof HTMLElement) {
+          li.style.listStyleType = "disc";
         }
       });
     }
@@ -59,10 +66,10 @@ export default function BlogPostTemplate({
 
   return (
     <Layout>
-      <div className="flex flex-col items-center gap-[20px] py-[40px]">
+      <div className="flex flex-col gap-[20px] py-[40px]">
         <div ref={contentRef} dangerouslySetInnerHTML={{ __html: html }} />
-        <a href={frontmatter.origin}>
-          <h2>원본 바로가기</h2>
+        <a href={frontmatter.origin} className="text-end">
+          원본 바로가기
         </a>
       </div>
     </Layout>

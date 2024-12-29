@@ -19,18 +19,24 @@ export default function Menu() {
                   <a href={`${slug}`} className="block">
                     <div className="text-lg font-bold">
                       {title_index + 1}. {title}
-                    </div>
-                    <div className="flex flex-col gap-[5px]">
-                      {items.map((item, item_index) => (
+                    </div>{" "}
+                  </a>
+                  <div className="flex flex-col gap-[5px]">
+                    {items.map((item, item_index) => (
+                      <a
+                        href={`${slug}#${encodeURIComponent(
+                          `${title_index + 1}.${item_index + 1}`
+                        )} `}
+                      >
                         <div
                           key={item_index}
                           className="text-sm font-bold hover:underline"
                         >
                           {title_index + 1}.{item_index + 1} — {item}
                         </div>
-                      ))}
-                    </div>
-                  </a>
+                      </a>
+                    ))}
+                  </div>
                 </li>
               ))}
             </ul>

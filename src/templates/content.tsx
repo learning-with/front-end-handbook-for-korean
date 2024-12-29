@@ -30,17 +30,30 @@ export default function BlogPostTemplate({
     if (contentRef.current) {
       const headings = contentRef.current.querySelectorAll("h1, h2, h3");
       headings.forEach((heading) => {
-        if (heading.tagName === "H1") {
-          (heading as HTMLElement).style.fontSize = "2rem";
-          (heading as HTMLElement).style.fontWeight = "bold";
-        } else if (heading.tagName === "H2") {
-          (heading as HTMLElement).style.fontSize = "1.5rem";
-          (heading as HTMLElement).style.fontWeight = "600";
-        } else if (heading.tagName === "H3") {
-          (heading as HTMLElement).style.fontSize = "1.25rem";
-          (heading as HTMLElement).style.fontWeight = "500";
+        if (heading instanceof HTMLElement) {
+          if (heading.tagName === "H1") {
+            heading.style.fontSize = "2rem";
+            heading.style.fontWeight = "bold";
+          } else if (heading.tagName === "H2") {
+            heading.style.fontSize = "1.5rem";
+            heading.style.fontWeight = "600";
+            heading.id = (heading.textContent || heading.innerText).split(
+              " "
+            )[0];
+          } else if (heading.tagName === "H3") {
+            heading.style.fontSize = "1.25rem";
+            heading.style.fontWeight = "500";
+          }
         }
       });
+    }
+
+    if (window.location.hash) {
+      const targetId = window.location.hash.slice(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
     }
   }, [html]);
 

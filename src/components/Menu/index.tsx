@@ -8,11 +8,14 @@ export default function Menu() {
   };
 
   return (
-    <div className="fixed pt-[20px] left-[20px] flex flex-row-reverse gap-[20px]">
-      <div onClick={toggleMenu}>|||</div>
+    <div className="fixed left-[20px] flex flex-row-reverse gap-[20px]">
+      <div onClick={toggleMenu} className="pt-[20px]">
+        |||
+      </div>
       {isMenuOpen && (
-        <div className="w-[350px] bg-white overflow-hidden max-h-screen overflow-y-auto">
+        <div className="w-[350px] pb-[50px] px-[10px] bg-white overflow-y-auto max-h-screen">
           <nav>
+            <h2 className="text-xl">프론트엔드 핸드북</h2>
             <ul className="list-none p-0 m-0 flex flex-col gap-[20px]">
               {content.map(({ title, slug, items }, title_index) => (
                 <li key={title_index}>
@@ -21,7 +24,7 @@ export default function Menu() {
                       {title_index + 1}. {title}
                     </div>
                   </a>
-                  <div className="flex flex-col gap-[5px]">
+                  <div className="ml-[5px] flex flex-col gap-[5px]">
                     {items.map((item, item_index) => (
                       <a
                         href={`${slug}#${encodeURIComponent(
@@ -52,8 +55,8 @@ const content = [
     title: "개요",
     slug: "/overview-of-field-of-work",
     items: [
-      "프론트엔드|UI|UX 개발자/엔지니어란 무엇인가?",
-      "일반적인 직무 명칭 (섹션 2의 '집중 분야'를 기준으로)",
+      "프론트엔드 개발자란 무엇인가?",
+      "일반적인 직무명",
       "커리어 레벨 및 보상",
       "직업적인 도전",
     ],
@@ -63,7 +66,7 @@ const content = [
     slug: "/areas-of-focus",
     items: [
       "웹사이트 개발",
-      "웹 애플리케이션 개발 / 소프트웨어 엔지니어링",
+      "웹 애플리케이션 개발",
       "웹 UX / UI 엔지니어링",
       "웹 테스트 엔지니어링",
       "웹 성능 엔지니어링",
@@ -85,15 +88,15 @@ const content = [
     title: "기본적인 개념",
     slug: "/foundational-aspects",
     items: [
-      "월드 와이드 웹 (WWW 또는 웹)",
+      "월드 와이드 웹(WWW)",
       "인터넷",
       "IP 주소",
       "도메인 이름",
-      "DNS (도메인 네임 시스템)",
-      "URL (통합 자원 위치)",
+      "DNS(도메인 네임 시스템)",
+      "URL(통합 자원 위치)",
       "서버 및 웹 호스팅",
-      "CDN (콘텐츠 전송 네트워크)",
-      "HTTP/HTTPS (하이퍼텍스트 전송 프로토콜/보안)",
+      "CDN(콘텐츠 전송 네트워크)",
+      "HTTP/HTTPS",
       "웹 브라우저",
       "자바스크립트 엔진",
     ],
@@ -103,13 +106,13 @@ const content = [
     slug: "/core-competencies",
     items: [
       "코드 편집기",
-      "HTML (하이퍼텍스트 마크업 언어)",
-      "CSS (종속 스타일 시트)",
-      "자바스크립트 프로그래밍 언어 (ECMAScript 262)",
-      "DOM (문서 객체 모델)",
+      "HTML(하이퍼텍스트 마크업 언어)",
+      "CSS(종속 스타일 시트)",
+      "자바스크립트 프로그래밍 언어",
+      "DOM(문서 객체 모델)",
       "TypeScript",
-      "자바스크립트 웹 API (웹 브라우저 API)",
-      "JSON (자바스크립트 객체 표기법)",
+      "자바스크립트 웹 API(웹 브라우저 API)",
+      "JSON(자바스크립트 객체 표기법)",
       "ES 모듈",
       "명령줄",
       "Node.js",
@@ -131,11 +134,11 @@ const content = [
       "알고리즘",
       "비동기 프로그래밍",
       "아토믹 CSS",
-      "백엔드 서비스 (BaaS)",
+      "백엔드 서비스(BaaS)",
       "빅 'O' 표기법",
-      "빌드 (웹 번들러)",
+      "빌드(웹 번들러)",
       "CI/CD",
-      "콘텐츠 관리 시스템 (CMS)",
+      "콘텐츠 관리 시스템(CMS)",
       "코드 복잡도",
       "코드 커버리지",
       "코드 포매터",
@@ -153,7 +156,7 @@ const content = [
       "DOM 스크립팅/조작",
       "프론트엔드 웹 개발 프레임워크 및 라이브러리",
       "풀 스택 웹 개발 프레임워크",
-      "함수형 프로그래밍 (FP)",
+      "함수형 프로그래밍(FP)",
       "함수형/전체 테스트",
       "GraphQL",
       "헤드리스 CMS",
@@ -165,39 +168,39 @@ const content = [
       "JSX",
       "마이크로 프론트엔드",
       "모노레포",
-      "다중 페이지 애플리케이션 (MPA)",
+      "다중 페이지 애플리케이션(MPA)",
       "웹 기술을 통한 네이티브 애플리케이션 개발",
-      "객체지향 프로그래밍 (OOP)",
+      "객체지향 프로그래밍(OOP)",
       "오프라인/로컬 우선 웹 개발",
       "폴리필",
-      "프로그레시브 웹 앱 (PWA)",
+      "프로그레시브 웹 앱(PWA)",
       "정규 표현식",
-      "반응형 디자인 (RWD)",
+      "반응형 디자인(RWD)",
       "REST API",
-      "검색 엔진 최적화 (SEO)",
+      "검색 엔진 최적화(SEO)",
       "의미론적 버전 관리",
       "의미론적 HTML",
-      "서버 사이드 렌더링 (SSR)",
-      "싱글 페이지 애플리케이션 (SPA)",
+      "서버 사이드 렌더링(SSR)",
+      "싱글 페이지 애플리케이션(SPA)",
       "상태 및 상태 관리",
       "상태 기계",
       "정적 분석 도구",
-      "정적 사이트 생성기 (SSG)",
+      "정적 사이트 생성기(SSG)",
       "정적 타입 / 타입 주석",
       "스트리밍 SSR",
       "트리 및 그래프 데이터 구조",
       "UI 디자인 패턴",
-      "UI 툴킷/라이브러리 (자바스크립트 UI 위젯)",
+      "UI 툴킷/라이브러리",
       "유닛 테스트",
-      "사용자 경험 (UX)",
+      "사용자 경험(UX)",
       "유틸리티 퍼스트 CSS 프레임워크",
       "가상 DOM",
       "비주얼 테스트",
       "웹 1.0",
       "웹 2.0",
-      "웹 3.0 (개념)",
-      "웹 애니메이션 (자바스크립트 애니메이션)",
-      "웹 어셈블리 (WASM)",
+      "웹 3.0(개념)",
+      "웹 애니메이션",
+      "웹 어셈블리(WASM)",
       "웹 브라우저 테스트",
       "웹 컴포넌트",
       "웹 폰트",

@@ -1,8 +1,9 @@
 import * as React from "react";
 
+import { HeadFC, graphql } from "gatsby";
+
 import Layout from "../components/Layout";
 import Menu from "../components/Menu";
-import { graphql } from "gatsby";
 
 type BlogPostDataProps = {
   markdownRemark: {
@@ -89,3 +90,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head: HeadFC = () => <title>프론트엔드 핸드북</title>;

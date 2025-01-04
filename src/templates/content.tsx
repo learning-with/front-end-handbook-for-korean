@@ -28,34 +28,6 @@ export default function BlogPostTemplate({
   const contentRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
-    if (contentRef.current) {
-      const headings = contentRef.current.querySelectorAll("h1, h2, h3");
-      headings.forEach((heading) => {
-        if (heading instanceof HTMLElement) {
-          if (heading.tagName === "H1") {
-            heading.style.fontSize = "2rem";
-            heading.style.fontWeight = "bold";
-          } else if (heading.tagName === "H2") {
-            heading.style.fontSize = "1.5rem";
-            heading.style.fontWeight = "600";
-            heading.style.marginTop = "30px";
-            heading.id = (heading.textContent || heading.innerText).split(
-              " "
-            )[0];
-          } else if (heading.tagName === "H3") {
-            heading.style.fontSize = "1.25rem";
-            heading.style.fontWeight = "600";
-          }
-        }
-      });
-      const listItems = contentRef.current.querySelectorAll("li");
-      listItems.forEach((li) => {
-        if (li instanceof HTMLElement) {
-          li.style.listStyleType = "disc";
-        }
-      });
-    }
-
     if (window.location.hash) {
       const targetId = window.location.hash.slice(1);
       const targetElement = document.getElementById(targetId);

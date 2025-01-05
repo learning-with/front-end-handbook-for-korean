@@ -3,7 +3,6 @@ import * as React from "react";
 import { HeadFC, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import Menu from "../components/Menu";
 
 type BlogPostDataProps = {
   markdownRemark: {

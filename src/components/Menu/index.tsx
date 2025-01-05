@@ -15,7 +15,9 @@ export default function Menu() {
       {isMenuOpen && (
         <div className="w-[350px] pb-[50px] px-[10px] bg-white overflow-y-auto max-h-screen">
           <nav>
-            <h2 className="text-xl">프론트엔드 핸드북</h2>
+            <a href="/">
+              <h2 className="text-black text-xl">프론트엔드 핸드북</h2>
+            </a>
             <ul className="list-none p-0 m-0 flex flex-col gap-[20px]">
               {content.map(({ title, slug, items }, title_index) => (
                 <li key={title_index}>

@@ -1,12 +1,11 @@
 # 프론트엔드 개발자/엔지니어 핸드북 2024 (번역본)
 
-### 작성자: Cody Lindley 및 프론트엔드 마스터즈(Frontend Masters)
+🔗 링크: https://frontend-handbook-for-korean.netlify.app/
 
-심층적이고, 현대적인 프론트엔드 엔지니어링 강좌와 함께 기술을 발전시키세요.
+이 프로젝트는 프론트엔드 마스터즈(Frontend Masters)와 Cody Lindley가 작성한 **The Frontend Developer/Engineer Handbook 2024**의 번역본을 제공합니다.
+핸드북은 프론트엔드 개발자가 알아야 할 필수 지식과 현대적인 기술 트렌드를 한눈에 파악할 수 있도록 설계되었습니다. 이 핸드북은 웹 프로트엔드 분야의 숙련된 전문가와 입문자 모두를 위한 프론트엔드 개발을 배우고 탐험하도록 돕는 자료입니다.
 
 <a href="https://frontendmasters.com/guides/front-end-handbook/2024/"><img src="https://frontendmasters.com/guides/front-end-handbook/2024/images/FEM2024_1000w.jpeg" alt="Frontend Handbook 2024 Cover" width=600 /></a>
-
-이 핸드북은 웹 프로트엔드 분야의 숙련된 전문가와 입문자 모두를 위한 프론트엔드 개발을 배우고 탐험하도록 돕는 자료입니다.
 
 ### 목차
 

@@ -131,14 +131,96 @@ ECMAScript로 잘 알려진 자바스크립트는 웹 개발에 필수적인 동
 - [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) on MDN
 
 ## 5.5 DOM (문서 객체 모델)
+문서 객체 모델(The Document Object Model, DOM)은 계층적인 노드 트리로서 웹페이지를 개념화하는 기본 프로그래밍 인터페이스이며 동적인 상호작용과 조작을 가능하게 합니다. 이 모델은 각 HTML 요소, 속성 및 텍스트 스니펫을 접근가능한 객체로 변환하며 자바스크립트와 같은 프로그래밍 언어가 페이지의 구조, 스타일, 콘텐츠를 효과적으로 변경할 수 있도록 합니다. DOM의 트리 구조는 웹 문서의 탐색과 편집을 단순화할 뿐만 아니라 실시간 업데이트, 이벤트 처리, 상호작용을 용이하게 하여 반응적이고 인터랙티브한 웹 애플리케이션을 만드는데 필수적입니다.
+
+주요 특징:
+- 트리 구조: DOM은 웹페이지를 트리로 표현하며 요소, 속성, 텍스트를 각각 노드로 나타냅니다. 예를 들어, HTML 문서는 `<html>`, `<head>`, <body>`와 같은 노드를 포함합니다.
+- 조작: 프로그래밍 언어 특히 자바스크립트를 사용하여 DOM을 조작할 수 있습니다. 이를 통해 HTML 요소, 속성, 텍스트를 변경하거나 요소를 추가 및 제거할 수 있습니다.
+- 이벤트 처리: DOM은 유저의 상호작용이나 브라우저의 활동으로 인한 이벤트를 처리할 수 있습니다.
+- 동적 변경: DOM을 통해, 웹 페이지는 리로드할 필요없이 동적으로 콘텐츠와 구조를 변경할 수 있으며 상호작용적이고 동적인 웹 애플리케이션을 구현할 수 있습니다.
+
+DOM은 웹 개발의 중요한 부분이며, 동적이고 인터랙티브한 웹 페이지를 가능하게 합니다. 이는 웹 페이지의 기초가되는 강력한 인터페이스이자 현대의 웹 브라우저에서 모두 지원합니다.
+
+더 알아보기:
+- [Introduction to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) on MDN
+- [DOM Enlightenment](https://domenlightenment.com/)
+- [Vanilla JS: You Might Not Need a Framework](https://frontendmasters.com/courses/vanilla-js-apps/?utm_source=guides&utm_medium=website&utm_campaign=feh2024) on Frontend Masters
+사양:
+- [DOM Living Standard](https://dom.spec.whatwg.org/)
+참고:
+- [MDN DOM interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) on MDN
 
 ## 5.6 TypeScript
+타입스크립트는 마이크로소프트가 개발하고 관리하는 오픈 소스 프로그래밍 언어입니다. 자바스크립트의 상위 집합으로, 유효한 자바스크립트 코드는 모두 타입스크립트 코드로도 유효합니다. 타입스크립트는 자바스크립트에 선택적 정적 타입과 다른 기능들을 더하며 특히 더 크고 복잡한 코드베이스에서의 개발 경험을 향상시킵니다.
+
+타입스크립트의 주요 특징:
+- 정적 타입 검사: 타입스크립트는 정적 타입 검사를 제공하여 개발자가 변수, 함수 매개변수 및 반환 값의 타입을 정의할 수 있도록 합니다. 이를 통해 런타임이 아닌 개발 단계에서 오류와 버그를 발견할 수 있습니다.
+- 타입 참조: 타입스크립트는 명시적인 타입 주석을 권장하지만, 강력한 타입 추론 기능도 제공합니다. 이를 통해 코드의 문맥에서 타입을 유추할 수 있어 타입 관련 보일러플레이트 코드의 양을 줄일 수 있습니다.
+- 고급 타입 시스템: 타입스크립트의 타입 시스템은 제너릭(Generics), 열거형(Enums), 튜플(Tuples) 및 유니온/교차 타입(Union/Intersection Types)과 같은 기능을 포합합니다. 이러한 고급 기능은 복잡하고 체계적인 코드를 작성할 수 있는 강력한 프레임워크를 제공합니다.
+- 자바스크립트 라이브러리와의 통합: 타입스크립트는 기존에 존재하는 자바스크립트 라이브러리와 프레임워크와 함께 사용할 수 있습니다. 많은 인기 라이브러리의 타입 정의(Type Definitions)를 사용할 수 있어 타입스크립트 프로젝트는 타입 검사의 이점을 누리면서 사용할 수 있습니다.
+- 도구 지원: 타입스크립트는 Visual Studio Code와 같은 통합 개발 환경(IDEs) 및 편집기에서 뛰어난 도구 지원을 제공합니다. 이는 자동완성, 탐색 및 리팩토링과 같은 기능을 포함하고 있습니다. 
+
+타입스크립트 사용의 장점:
+- 향상된 코드 품질 및 유지보수성: 정적 타입은 초기 개발 단계에서 쉽게 에러를 감지할 수 있도록 도우며 전반적인 코드 품질을 향상시킵니다.
+- 더 쉬운 리팩토링과 디버깅: 타입은 코드가 수행해야 할 작업에 대한 더 많은 정보를 제공하며 코드를 리팩토링하고 디버그하기 쉽게 만들어 줍니다.
+- 더 나은 개발자 경험: 자동완성, 코드 탐색 및 문서화 등의 도구 지원은 개발자 경험을 향상시킵니다.
+- 확장성: 타입스크립트는 대규모의 코드베이스와 팀에 적합하며 복잡성을 관리하고 코드의 일관성을 유지하는데 도움을 주는 기능을 제공할 수 있습니다.
+
+고려사항:
+- 학습 곡선: 정적 타입에 친숙하지 않은 개발자들에게 타입스크립트를 효율적으로 사용하는 데 학습 곡선이 있을 수 있습니다.
+- 컴파일 단계: 타입스크립트를 자바스크립트로 변환해야하는 트랜스파일링 과정이 필요하며 이는 빌드 단계에 추가적인 단계를 더합니다.
+
+요약해서, 타입스크립트는 정적 타입과 다른 유용한 특징들을 더해 자바스크립트를 확장시키기 때문에, 대규모 애플리케이션이나 코드 유지보수가 중요한 프로젝트에서 강력한 선택이 됩니다. 개발자들이 강력한 타입 시스템과 도구 지원을 통해 이점을 누릴 수 있는 프로젝트를 포함하여 프론트엔드 커뮤니티에서 널리 채택되고 있습니다.
+
+더 알아보기:
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
+- [TypeScript 5+ Fundamentals, v4](https://frontendmasters.com/courses/typescript-v4/?utm_source=guides&utm_medium=website&utm_campaign=feh2024) from Frontend Masters
+- [TypeScript Learning Path](https://frontendmasters.com/learn/typescript/?utm_source=guides&utm_medium=website&utm_campaign=feh2024) from Frontend Masters
+- [Beginner's TypeScript](https://www.totaltypescript.com/tutorials/beginners-typescript)
+- [The Concise TypeScript Book](https://github.com/gibbok/typescript-book)
+- [TypeScript Road Map](https://roadmap.sh/typescript)
+
+도구:
+- [TypeScript Playground](https://www.typescriptlang.org/play)
+- [tsdocs.dev](https://tsdocs.dev/)
+- [ts-reset](https://www.totaltypescript.com/ts-reset)
 
 ## 5.7 자바스크립트 웹 API (웹 브라우저 API)
+JavaScript 웹 플랫폼 API는 웹 브라우저에 내장된 애플리케이션 프로그래밍 인터페이스(API) 모음으로, 현대적인 웹 애플리케이션을 구축하는 데 필요한 구성 요소를 제공합니다. 개발자는 이를 통해 브라우저 및 기본 운영 체제와 상호작용할 수 있으며, 전통적으로 네이티브 애플리케이션에서만 가능했던 다양한 작업을 웹 애플리케이션에서도 수행할 수 있습니다.
+
+주요 카테고리와 예시:
+- 그래픽 및 미디어 API: Canvas와 WebGL과 같은 그래픽 API로 2D와 3D 그래픽을 렌더링할 수 있습니다. 미디어 API는 `HTMLMediaElement` 인터페이스와 Web Audio API 등의 오디오와 비디오 콘텐츠를 재생하고 조작할 수 있습니다.
+- 통신 API: 웹 애플리케이션의 일부와 애플리케이션 사이의 통신을 용이하게 합니다. 예를 들어 WebSocket과 Fetch API가 있습니다.
+- 디바이스 API: 카메라, 마이크, GPS와 같은 사용자의 장치에 접근할 수 있습니다. 예를 들어 Geolocation API, Media Capture와 Stream API 및 배터리 상태 API를 포함합니다. 
+- 저장 API: 웹 애플리케이션이 사용자의 장치에 지역적으로 데이터를 저장할 수 있게합니다. 예를 들어 로컬 스토리지 API와 IndexedDB API가 있습니다.
+- 서비스 워커 및 오프라인 API: 애플리케이션은 리소스를 캐시하여 오프라인에서 실행될 수 있고 성능을 향상시킬 수 있습니다. 서비스 워커는 네트워크 요청을 가로채고 푸시 메시지를 전달할 수 있습니다.
+- 성능 API: 웹 애플리케이션의 성능을 측정하고 최적화하는데 도움을 줍니다. 예를 들어 Navigation Timing API와 Performance Observer API를 포함합니다.
+
+웹 플랫폼 API는 웹 애플리케이션의 기능을 크게 확장하여, 더 인터랙티브하고 반응성이 뛰어나며 기능이 풍부한 애플리케이션을 만들 수 있게 해줍니다. 이 API들은 개발자가 네이티브 코드 없이 다양한 플랫폼과 디바이스에서 작동하는 애플리케이션을 만들 수 있도록 지원하며, 개발 시간과 비용을 절감하는 데 도움을 줍니다. 이러한 API의 사용은 네이티브 애플리케이션과 비교할 수 있는 사용자 경험을 제공하는 현대적인 웹 애플리케이션을 구축하는 데 필수적입니다.
+
+이 API들은 W3C(World Wide Web Consortium)와 WHATWG(Web Hypertext Application Technology Working Group)와 같은 기관에 의해 표준화되었습니다. 그러나 다양한 API에 대한 브라우저의 지원은 다를 수 있습니다.
+
+더 학습하기:
+- [Introduction to web APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction) on MDN
+- [List of JavaScript Web APIs (Specifications and Interfaces)](https://developer.mozilla.org/en-US/docs/Web/API) on MDN
+- [The Web Platform: Browser technologies](https://html-now.github.io/)
+- [Browser APIs Learning Path](https://frontendmasters.com/learn/browser-apis/?utm_source=guides&utm_medium=website&utm_campaign=feh2024) from Frontend Masters
 
 ## 5.8 JSON (자바스크립트 객체 표기법)
+JSON (JavaScript Object Notation)은 사람이 읽고 쓰기 쉽고 기계가 파싱하고 생성하기 쉬운 경량 데이터 교환 형식입니다. 텍스트 기반 형식으로, 이름-값 쌍과 값의 순서가 지정된 목록으로 구성되어 있으며, 웹 개발 및 다양한 프로그래밍 컨텍스트에서 널리 사용됩니다. 주요 특성은 다음과 같습니다.
+
+- 경량 데이터 형식: JSON은 텍스트 기반으로 가볍게하여 데이터 교환에 적합합니다.
+- 사람과 기계가 읽을 수 있음: 구조가 간단하고 명확하여 사람이 읽을 수 있고, 기계가 쉽게 파싱할 수 있습니다.
+- 언어 독립적: 이름과는 달리, JSON은 JavaScript에 의존하지 않으며, 많은 프로그래밍 언어에서 사용할 수 있습니다.
+
+더 학습하기:
+- [JSON's official site](https://www.json.org/json-en.html)
+- [Working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) on MDN
 
 ## 5.9 ES 모듈
+ES 모듈(ECMAScript Modules)은 모듈화된 JavaScript 코드의 공식 표준입니다. 이는 JavaScript 코드를 재사용을 위해 효율적으로 구조화하고 조직할 수 있는 방법을 제공합니다.
+
+ES 모듈의 주요 특징:
 
 ## 5.10 명령줄
 

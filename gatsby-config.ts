@@ -47,6 +47,19 @@ const config: GatsbyConfig = {
       },
       __key: "contents",
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-DV472NTBRD"],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
   ],
 };
 

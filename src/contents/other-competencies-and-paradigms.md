@@ -27,6 +27,18 @@ A/B 테스트는 데이터 기반 의사 결정을 가능하게 하며, 사용�
 
 ## 6.2 AI 기반 코딩 도구
 
+AI 기반 코딩 도구는 인공지능(AI)과 머신러닝(ML)을 활용하여 개발자가 코드를 작성하는 데 도움을 주는 소프트웨어 프로그램입니다. 이러한 도구는 반복적인 작업을 자동화하고 지능적으로 코드를 추천하여 개발자의 생산성과 효율성을 향상시키기 위해 설계되었습니다. 코드 자동 완성, 리팩토링, 디버깅 등 다양한 용도로 활용될 수 있습니다.
+
+AI 기반 코딩 도구는 개발자 커뮤니티에서 점점 더 인기를 얻고 있으며, 많은 통합 개발 환경(IDE)과 코드 편집기에 이러한 기능이 통합되고 있습니다. 특히 프론트엔드 개발자에게 유용한데, HTML, CSS, JavaScript 코드를 작성하는 작업을 지원할 수 있습니다. 또한 코드 리팩토링이나 디버깅 같은 더 복잡한 작업에도 활용될 수 있습니다.
+
+AI 기반 코딩 도구는 아직 초기 단계에 있으며, 그 기능은 제한적입니다. 하지만 앞으로 개발자의 생산성과 효율성을 크게 향상시킬 잠재력을 가지고 있습니다.
+
+더 학습하기
+- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
+
+도구 
+- [Github Copilot](https://github.com/features/copilot)
+
 ## 6.3 적응형 디자인
 
 ## 6.4 알고리즘
@@ -59,9 +71,52 @@ A/B 테스트는 데이터 기반 의사 결정을 가능하게 하며, 사용�
 
 ## 6.14
 
-## 6.15
+## 6.15 CSS in JS
 
-## 6.16
+CSS in JS는 최신 웹 개발에서 사용되는 스타일링 기법으로, 특히 JavaScript 기반의 UI 프레임워크나 라이브러리와 함께 자주 사용됩니다. 이 방식은 CSS 스타일을 JavaScript 코드 안에 직접 작성하는 것을 의미하며, UI 컴포넌트 기반 아키텍처에서 여러 가지 이점을 제공합니다.
+
+장점 : 
+- **로컬 스코프(Local Scoping)**: 스타일이 컴포넌트 단위로 범위가 제한되어 있어, 전역 CSS 충돌을 방지할 수 있습니다.
+- **동적 스타일링(Dynamic Styling)**: 컴포넌트의 상태(state)나 props에 따라 동적으로 스타일을 변경하기 쉽습니다.
+- **JavaScript 기능 활용**: 변수, 함수, 조건문 등 JavaScript의 기능을 스타일링에 적극적으로 활용할 수 있습니다.
+- **유지보수성(Maintenance)**: 스타일을 컴포넌트와 가까운 위치에 작성함으로써, 대규모 코드베이스에서 유지보수가 쉬워집니다.
+
+고려할 점 : 
+- **성능(Performance)**: 일부 상황에서는 JavaScript 기반 스타일링이 성능에 영향을 줄 수 있습니다.
+- **복잡성(Complexity)**: JavaScript에 익숙하지 않은 사람들에게는 추가적인 복잡함을 가져올 수 있습니다.
+- **서버 사이드 렌더링(SSR)**: 일부 CSS-in-JS 솔루션은 서버 사이드 렌더링 환경에서 설정이 복잡할 수 있습니다.
+
+CSS in JS는 스타일링을 현대적인 JavaScript 및 컴포넌트 기반 프레임워크와 일치시키며, 캡슐화되고 확장 가능한 스타일링 솔루션을 제공합니다.
+
+도구
+- [Styled Components](https://styled-components.com/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
+- [Panda CSS](https://panda-css.com/)
+- [StyleX](https://stylex-docusaurus.vercel.app/docs/learn/)
+- [Vanilla Extract](https://vanilla-extract.style/)
+
+## 6.16 CSS Animations
+
+CSS 애니메이션은 웹 개발에서 강력한 도구로, 사용자와의 상호작용을 돕고 웹 페이지를 더욱 생동감 있게 만들어줍니다. HTML 요소와 CSS 속성에 애니메이션을 적용할 수 있어, 웹 페이지에 다양한 시각적 효과를 더할 수 있습니다. 특히, 호버 효과나 전환(transition)과 같은 상태 기반 애니메이션을 구현할 때 유용합니다.
+
+CSS 애니메이션 개요 : 
+- **간편함과 성능**:간단한 애니메이션을 구현하기 쉽고, 기본적인 전환 효과에서는 성능이 뛰어납니다.
+
+- **문법(Syntax)**: @keyframes와 animation 속성을 사용해 CSS만으로 애니메이션을 정의합니다.
+
+- **제어(Control)**:비교적 제어가 제한적이지만, 상태 기반의 간단한 애니메이션(예: 호버 효과, 전환 효과)에는 이상적입니다.
+
+- **한계(Limitations)**:사용자 입력에 따라 동적으로 반응해야 하는 복잡한 인터랙티브 애니메이션에는 적합하지 않습니다.
+
+더 학습하기
+
+- [Using CSS animations on MDN]()
+- [CSS Animations and Transitions from Frontend Masters]()
+
+주요 도구들
+- [Animista](https://animista.net/)
+- [Animate.css](https://animate.style/)
+
 
 ## 6.17
 
